@@ -1,0 +1,45 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script src="socket.io/socket.io.js"></script>
+    <script src="interactions.js"></script>
+  </head><body>
+    <div class="overlay">
+     <div class="row center">
+          <div class="col-md-12">
+            <div class="circle-wait" id="waiting">
+                <p class="center lead">Waiting for another user</p>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="section center">
+      <div class="container">
+          <div class="row">
+              <div id="user" class="col-md-12"></div>
+          </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-muted" id="output">Click the circle to start!</h1>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="circle" id="leftmove"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="circle" id="rightmove"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
